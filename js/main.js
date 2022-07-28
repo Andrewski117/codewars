@@ -10,6 +10,18 @@ function multipleOfIndex(array) {
     return newArr;
 }
 
+/*2.
+Given a 2D ( nested ) list ( array, vector, .. ) of size m * n, your task is to find the sum of the 
+minimum values in each row.
+ */
+function sumOfMinimums(arr) {
+    let minVal = 0;
+    arr.forEach((elem) => {
+        minVal += Math.min(...elem)}
+    );
+    return minVal;
+}
+
 
 
 
