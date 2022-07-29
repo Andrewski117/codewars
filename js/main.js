@@ -22,6 +22,21 @@ function sumOfMinimums(arr) {
     return minVal;
 }
 
+/*3.
+Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+ */
+function shortcut (string) {
+    let arr = string.split('');
+    let finalArr = [];
+    let lowerCaseVowels = ['a','e','i','o','u'];
+    arr.forEach((elem,index) => {
+        if(lowerCaseVowels.indexOf(elem) === -1){
+            finalArr.push(elem);
+        }
+    });
+    return finalArr.join('');
+}
+
 
 
 
