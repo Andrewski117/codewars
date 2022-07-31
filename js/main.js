@@ -35,6 +35,17 @@ function shortcut (string) {
         }
     });
     return finalArr.join('');
+} 
+
+/*
+4. ATM Machines allow 4 or 6 digit pin codes and they must be numbers. return true if valid.
+ */
+function validatePIN(pin){
+    let reg = new RegExp(`^[0-9]*$`)
+    let finalString = pin.match(reg);
+    if(finalString === null) return false;
+    return finalString[0].length === 4 || finalString[0].length === 6 ? true : false;
+    
 }
 
 
