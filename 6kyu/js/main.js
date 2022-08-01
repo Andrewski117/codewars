@@ -23,6 +23,26 @@ function persistance(num){
     return count;
 }
 
+/*
+2.
+Your task is to sort a given string. Each word in teh string will contain a single number.
+This number is the position the word should be in the result. Numbers can range from 1-9.
+If input is empty, return empty string. 
+ */
+function order(words){
+    let arr = words.split(' ');
+    let newArr = [];
+    let index = 1;
+    while(index < arr.length + 1){
+        arr.forEach((elem) => {
+            if(elem.includes(index.toString())){
+                newArr.push(elem);
+            }
+        });
+        index++;
+    }
+    return newArr.join(' ');
+}
 
 
 

@@ -15,6 +15,20 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
     return Math.floor(sqrt/2);
 
 }
+/*
+2. 
+Your task is to write function factorial.
+ */
+function factorial(n){
+    let count = n;
+    if(count === 1 || count === 0) return 1;
+
+    for(let i = 1; i < n; i++){
+        count *= i;
+    }
+
+    return count;
+}
 
 
 
