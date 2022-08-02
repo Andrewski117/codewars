@@ -29,7 +29,13 @@ function factorial(n){
 
     return count;
 }
-
+/*
+3. 
+Write a small function that returns the values of an array that are not odd.
+ */
+function noOdds(values){
+    return values.filter((elem) => elem % 2 === 0);
+}
 
 
 
