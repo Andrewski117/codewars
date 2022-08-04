@@ -36,6 +36,19 @@ Write a small function that returns the values of an array that are not odd.
 function noOdds(values){
     return values.filter((elem) => elem % 2 === 0);
 }
+/*
+4.
+Count the number of divisors of a positive integer n. Random tests go up to n = 500000.
+ */
+function getDivisorsCnt(n){
+    let divisorArr = [];
+    for(let i = 0; i <= n; i++){
+        if(n % i === 0){
+            divisorArr.push(i);
+        }
+    }
+    return divisorArr.length;
+}
 
 
 
