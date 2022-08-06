@@ -49,6 +49,18 @@ function getDivisorsCnt(n){
     }
     return divisorArr.length;
 }
+/*
+5.
+Your task is to make a function that can take any non negative int as an argument and return it with its digits in
+descending order.
+ */
+function descendingOrder(n){
+    n = n.toString();
+    let arr = n.split('');
+    let numArr = arr.map((elem) => +elem);
+    let number = numArr.sort((a,b) => a-b).reverse().join('');
+    return +number;
+}
 
 
 
