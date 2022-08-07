@@ -43,6 +43,14 @@ function order(words){
     }
     return newArr.join(' ');
 }
+/*
+3.
+Complete the solution so that the function will break up camel casing, using a space between words.
+ */
+function solution(string) {
+    const result = string.replace(/[A-Z]/g, ' $&').trim();
+    return result;
+}
 
 
 
