@@ -51,6 +51,22 @@ function solution(string) {
     const result = string.replace(/[A-Z]/g, ' $&').trim();
     return result;
 }
+/*
+4.
+Your task is to create NxN multiplication table of sized provided in parameter;
+ */
+let multiplicationTable = function(size){
+    let mainArr = [];
+    let index = 1;
+    for(let i = 1; i < size + 1; i++){
+        let tempArr = [];
+        for(let j = 1; j < size +1; j++){
+            tempArr.push(j * i);
+        }
+        mainArr.push(tempArr);
+    }
+    return mainArr;
+}
 
 
 
