@@ -61,6 +61,21 @@ function descendingOrder(n){
     let number = numArr.sort((a,b) => a-b).reverse().join('');
     return +number;
 }
+/*
+6.
+Given an array of numbers, return a new array of length of the 2nd parameter containing the last even numbers
+from the original array (in the same order). Original array will not be empty and will contain at least the 
+length parameter of even numbers. 
+ */
+function evenNumbers(array, length){
+    let arr = [];
+    array.forEach((elem) => {
+        if(elem % 2 === 0){
+            arr.push(elem);
+        }
+    });
+    return arr.splice(-length);
+}
 
 
 
