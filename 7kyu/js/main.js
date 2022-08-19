@@ -76,7 +76,19 @@ function evenNumbers(array, length){
     });
     return arr.splice(-length);
 }
-
+/*
+7.
+Given an array of integers , Find the minimum sum which is obtained from summing each Two integers product .
+ */
+function minSum(arr) {
+    let total = 0;
+    let sorted = arr.sort((a,b) => a-b);
+    for(let i = 0; i < sorted.length/2; i++){
+        let index = i + 1;
+        total += sorted[i] * sorted[sorted.length-index];
+    }
+    return total;
+}
 
 
 
