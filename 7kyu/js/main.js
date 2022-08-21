@@ -89,6 +89,25 @@ function minSum(arr) {
     }
     return total;
 }
+/*
+8.
+Write a method that takes one argument as name and then greets that name, capitalized and ends with an exclamation point.
+ */
+var greet = function(name) {
+    let firstLetter = name[0].toUpperCase();
+    let arr = name.split('');
+    let finalArr = [];
+    arr.forEach((elem, index) => {
+        if(index === 0){
+            finalArr.push(elem.toUpperCase());
+        }
+        else{
+            finalArr.push(elem.toLowerCase());
+        }
+    });
+    let final = finalArr.join('')
+    return `Hello ${final}!`
+};
 
 
 
