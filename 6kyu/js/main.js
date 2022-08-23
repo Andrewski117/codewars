@@ -87,6 +87,23 @@ function isPangram(string){
     });
     return alphaArr.length === 0 ? true : false;
 }
+/*
+6.
+I would like for you to write me a function that when given a number (n) returns the n-th number in the Fibonacci Sequence.
+ */
+function nthFibo(n) {
+    let finalArr = [0,1];
+    if(n === 1) return 0;
+    else if(n === 2) return 1;
+    else{
+        for(let i = 0; i < n-2; i++){
+            let numOne = finalArr[finalArr.length-1];
+            let numTwo = finalArr[finalArr.length-2];
+            finalArr.push(numOne + numTwo);
+        }
+        return finalArr[n-1];
+    }
+}
 
 
 
