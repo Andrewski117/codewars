@@ -48,6 +48,16 @@ function validatePIN(pin){
     
 }
 
+/*
+5.
+Return the odds from a list:
+ */
+function odds(values){
+    return values.filter((elem) => {
+        return elem % 2 !== 0;
+    })
+}
+
 
 
 
