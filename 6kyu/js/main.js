@@ -105,6 +105,23 @@ function nthFibo(n) {
     }
 }
 
+/*
+7. In this kata, you are required to (given a string) replace every letter with its position in the alphabet. 
+Ignore anything that isn't a letter. 
+ */
+function alphabetPosition(text){
+    let alpha = 'abcdefghijklmnopqrstuvwxyz';
+    let finalArr = [];
+    text = text.toLowerCase();
+    let arr = text.split('');
+    arr.forEach((elem) => {
+        if(alpa.includes(elem)){
+            finalArr.push(alpha.indexOf(elem) + 1);
+        }
+    });
+    return finalArr.join(' ');
+}
+
 
 
 
