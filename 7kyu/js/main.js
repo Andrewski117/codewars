@@ -133,6 +133,28 @@ function nbDig(n, d) {
     return counter;
 }
 
+/*
+10.
+To be a senior, a member must be at least 55 years old and have a handicap greater than 7. 
+In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
+
+Input
+Input will consist of a list of pairs. Each pair contains information for a single potential member. 
+Information consists of an integer for the person's age and an integer for the person's handicap.
+ */
+function openOrSenior(data){
+    let array = [];
+    data.forEach((elem) => {
+        if(elem[0] >= 55 && elem[1] > 7){
+            array.push('Senior');
+        }
+        else{
+            array.push('Open');
+        }
+    });
+    return array;
+}
+
 
 
 
