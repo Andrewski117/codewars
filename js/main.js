@@ -57,6 +57,27 @@ function odds(values){
         return elem % 2 !== 0;
     })
 }
+/*
+Numbers ending with zeros are boring.
+
+They might be fun in your world, but not here.
+
+Get rid of them. Only the ending ones.
+ */
+function noBoringZeros(n) {
+    n = n.toString();
+    let nArr = n.split("");
+    if(nArr.length <= 1 ) return 0;
+    for(let i = nArr.length-1; i > 0; i--){
+        if(nArr[i] === '0'){
+            nArr.pop();
+        }
+        else{
+            let final = nArr.join('');
+            return +final;
+        }
+    }
+}
 
 
 
