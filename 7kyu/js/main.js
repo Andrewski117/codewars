@@ -155,6 +155,21 @@ function openOrSenior(data){
     return array;
 }
 
+/*
+11.
+Complete the function that takes two numbers as input, 
+num and nth and return the nth digit of num (counting from right to left).
+ */
+var findDigit = function(num, nth){
+    num = Math.abs(num);
+    if(nth <= 0) return -1;
+    num = num.toString().split('').reverse();
+    let index = nth-1;
+    if(index >= num.length) return 0;
+    return +num[index]
+
+}
+
 
 
 
