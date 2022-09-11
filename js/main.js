@@ -58,6 +58,7 @@ function odds(values){
     })
 }
 /*
+6.
 Numbers ending with zeros are boring.
 
 They might be fun in your world, but not here.
@@ -77,6 +78,14 @@ function noBoringZeros(n) {
             return +final;
         }
     }
+}
+/*
+7.
+You've decided to write a function, guessBlue() to help automatically calculate whether you should guess "blue" or "red". 
+ */
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+    let remaining = (blueStart - bluePulled) + (redStart -redPulled);
+    return (blueStart -bluePulled) / remaining;
 }
 
 
