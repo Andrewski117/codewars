@@ -100,6 +100,14 @@ function sumOfDifferences(arr) {
     }
     return sum;
 }
+/*
+9.
+It's up to you to find out whether the cuboid has equal sides (= is a cube).
+ */
+var cubeChecker = function(volume, side){
+    if(volume <= 0 || side <= 0) return false;
+    return Math.pow(side,3) === volume ? true : false;
+};
 
 
 
