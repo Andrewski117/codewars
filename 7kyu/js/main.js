@@ -169,6 +169,17 @@ var findDigit = function(num, nth){
     return +num[index]
 
 }
+/*
+12.
+Write a function that takes a positive integer n, sums all the cubed values from 1 to n, and returns that sum.
+ */
+function sumCubes(n){
+    let sum = 0;
+    for(let i = 0; i <= n; i++){
+        sum += Math.pow(i, 3);
+    }
+    return sum;
+}
 
 
 
