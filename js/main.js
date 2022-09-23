@@ -108,6 +108,11 @@ var cubeChecker = function(volume, side){
     if(volume <= 0 || side <= 0) return false;
     return Math.pow(side,3) === volume ? true : false;
 };
+/*
+10. Add the value "codewars" to the websites array.
+ */
+let websites = [];
+websites.push('codewars');
 
 
 
