@@ -180,6 +180,21 @@ function sumCubes(n){
     }
     return sum;
 }
+/*
+13. Write func that returns sum of following series to nth number
+series: 1/4, 1/7, 1/10, 1/13
+ */
+function SumOfSeries(n){
+    let sum = 1;
+    let div = 4;
+    if(n === '0') return '0.00';
+    if(n === '1') return '1.00';
+    for(let i = 1; i < n; i++){
+        sum += (1 / div);
+        div += 3;
+    }
+    return sum.toFixed(2).toString();
+}
 
 
 
