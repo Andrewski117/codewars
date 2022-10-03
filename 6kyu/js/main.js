@@ -122,6 +122,24 @@ function alphabetPosition(text){
     return finalArr.join(' ');
 }
 
+/*
+write func tha takes an array of numbers and a target number. Find two numbers in the array that add up to the 
+target number. Then return as a tuple, the index of these numbers. 
+ */
+function twoSum(numbers, target){
+    let returnArr = [];
+    let index = 1;
+    while(index < numbers.length){
+        for(let i =0; i < numbers.length; i++){
+            if(numbers[i] + numbers[index] === target && i !== index){
+                returnArr.push(i, index);
+                return returnArr;
+            }
+        }
+        index++;
+    }
+}
+
 
 
 
