@@ -123,6 +123,7 @@ function alphabetPosition(text){
 }
 
 /*
+8.
 write func tha takes an array of numbers and a target number. Find two numbers in the array that add up to the 
 target number. Then return as a tuple, the index of these numbers. 
  */
@@ -140,6 +141,20 @@ function twoSum(numbers, target){
     }
 }
 
+/*
+9. Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any 
+elements with the same value next to each other and preserving the original order of elements.
+ */
+var uniqueInOrder=function(iterable){
+    iterable = Array.from(iterable);
+    let returnArr = [];
+    iterable.forEach((elem, index) => {
+        if(elem !== iterable[index+1]){
+            returnArr.push(elem);
+        }
+    })
+    return returnArr;
+}
 
 
 
